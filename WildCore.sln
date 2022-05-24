@@ -7,6 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{0EAF6FEC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCore.Launcher", "WildCore.Launcher\WildCore.Launcher.csproj", "{60C58E1D-0C24-41D8-BE95-F5EB3BD4035B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{407AA885-23CF-4B57-9D36-2A440C35C11D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCore.AuthServer", "WildCore.AuthServer\WildCore.AuthServer.csproj", "{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4E0C4B9A-7591-4446-ADFB-7A3A17601C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCore.Common", "WildCore.Common\WildCore.Common.csproj", "{1B6A249F-1746-4422-B0A9-C1967E176743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +25,22 @@ Global
 		{60C58E1D-0C24-41D8-BE95-F5EB3BD4035B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C58E1D-0C24-41D8-BE95-F5EB3BD4035B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60C58E1D-0C24-41D8-BE95-F5EB3BD4035B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B6A249F-1746-4422-B0A9-C1967E176743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6A249F-1746-4422-B0A9-C1967E176743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6A249F-1746-4422-B0A9-C1967E176743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6A249F-1746-4422-B0A9-C1967E176743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{60C58E1D-0C24-41D8-BE95-F5EB3BD4035B} = {0EAF6FEC-3A47-4E29-BF32-91FE6D26A18D}
+		{9AEA9B4C-8E91-43BA-BBAF-49A8DC689FBA} = {407AA885-23CF-4B57-9D36-2A440C35C11D}
+		{1B6A249F-1746-4422-B0A9-C1967E176743} = {4E0C4B9A-7591-4446-ADFB-7A3A17601C54}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7F88A38-7B52-4EBE-9AC1-4D69B2EB80D7}
