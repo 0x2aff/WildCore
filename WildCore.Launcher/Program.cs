@@ -78,7 +78,9 @@ namespace WildCore.Launcher
         {
             var config = new Config();
 
-            string configJson = JsonSerializer.Serialize(config);
+            JsonSerializerOptions serializerOptions = new() { WriteIndented = true };
+            string configJson = JsonSerializer.Serialize(config, serializerOptions);
+
             File.WriteAllText(CONFIG_PATH, configJson);
 
             return config;
