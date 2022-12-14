@@ -30,9 +30,9 @@ namespace WildCore.AuthServer
     {
         private readonly Config _config;
 
-        public Startup(Config _config)
+        public Startup(Config config)
         {
-            _config = _config;
+            _config = config;
 
         }
 
