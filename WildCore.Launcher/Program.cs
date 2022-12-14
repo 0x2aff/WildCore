@@ -1,18 +1,18 @@
 ﻿/*
  * MIT License
- * 
+ *
  * Copyright (c) 2022 Stanislaw Schlosser <https://github.com/0x2aff>
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -31,7 +31,7 @@ namespace WildCore.Launcher
     {
         private static readonly string CONFIG_PATH = "Config.json";
 
-        private static readonly string LAUNCH_ARGUMENTS_FORMAT = 
+        private static readonly string LAUNCH_ARGUMENTS_FORMAT =
             "/auth {0} /authNc {0} /lang {1} /patcher {0} /SettingsKey WildStar /realmDataCenterId 9";
 
         internal static void Main()
@@ -62,9 +62,9 @@ namespace WildCore.Launcher
         private static Config GetConfig()
         {
             if (!File.Exists(CONFIG_PATH))
-                return GenerateNewConfig();
+                return CreateConfig();
 
-            
+
             string configJson = File.ReadAllText(CONFIG_PATH);
             Config? config = JsonSerializer.Deserialize<Config>(configJson);
 
@@ -74,7 +74,7 @@ namespace WildCore.Launcher
             return config;
         }
 
-        private static Config GenerateNewConfig()
+        private static Config CreateConfig()
         {
             var config = new Config();
 
